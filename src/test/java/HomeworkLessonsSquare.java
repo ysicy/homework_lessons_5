@@ -37,7 +37,6 @@ public class HomeworkLessonsSquare {
         squareB.shouldBe(Condition.visible);
         // Поменяем местами элемент А с элементом В
         squareA.dragAndDropTo(squareB);
-//      Selenide.actions().dragAndDrop(squareA, squareB); - хотел попробовать для теста данный метод, знаю что использование метода актуально, но тест фейлится
         //Убедимся, что в элементе А присутствует текст : "В"
         textA.shouldHave(Condition.text("B"));
         //Убедимся, что в элементе В присутствует текст : "А"
