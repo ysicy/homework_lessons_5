@@ -25,7 +25,7 @@ public class FindCorrectText {
     void test(){
 
         open("https://github.com/");
-        solutionsLink.click();
+        solutionsLink.hover();
         enterpriseLink.click();
         buildtext.shouldHave(Condition.text("Build like the best"));
 
